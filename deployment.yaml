@@ -1,0 +1,21 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meu-projeto-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meu-projeto
+  template:
+    metadata:
+      labels:
+        app: meu-projeto
+    spec:
+      containers:
+      - name: meu-projeto-container
+        # Esta linha será atualizada automaticamente pelo seu CI/CD
+        image: murilopetri/meu-projeto-ci-cd:latest
+        ports:
+        - containerPort: 80
