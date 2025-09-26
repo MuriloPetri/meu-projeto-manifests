@@ -16,6 +16,6 @@ spec:
       containers:
       - name: meu-projeto-container
         # Esta linha será atualizada automaticamente pelo seu CI/CD
-        image: muliropetri123/hello-app:7c0cb85c676544e2c2972607f28170f47ef6cde7
+        image: muliropetri123/hello-app:ff7c0763d095b5a0c880958de4c9a13ad0a0f3be
         ports:
         - containerPort: 80
